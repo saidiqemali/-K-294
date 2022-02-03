@@ -7,7 +7,33 @@
 }
 
 .card {
-  border: 2px solid #e7e7e7;
+  border: 10px solid #2d4ca3;
   border-radius: 4px;
   padding: 0.5rem;
+}
+
+
+.container {
+  background-color: rgb(25, 14, 56);
+  background-attachment: fixed;
+  border-radius: 30px;
+}
+
+.block {
+  background-color: rgb(18, 19, 10);
+  border-radius: 10px;
+}
+
+#input-email {
+  background-color:rgb(7, 13, 32);
+}
+
+#input-password {
+  background-color:rgb(7, 13, 32);
+}
+
+
+.title {
+  justify-content: center;
+  text-align: center;
 }
