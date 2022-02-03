@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.is-authenticated .authenticated-only {
+			display: block;
+		}
+
+		.is-authenticated .unauthenticated-only {
+			display: none;
+		}
+
+		.authenticated-only {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="loginSection" class="unauthenticated-only">
+		<h1>Login</h1>
+		<form>
+			<label for="input-email">Email</label>
+			<input type="email" name="email" id="input-email" value="hugo@nowhere.com">
+			<br>
+			<label for="input-password">Password</label>
+			<input type="password" name="password" id="input-password" value="Zli123">
+    <button type="button" onclick="register()">Register</button>
+			<button type="button" onclick="login()">Login</button>
+			<!-- <button type="button" onclick="loadTasks()">Load</button> -->
+		</form>
+	</section>
+	<section class="authenticated-only">
+		<p id="welcome"></p>
+    <button type="button" onclick="loadTasks()">Load</button>
+		<button type="button" onclick="logout()">Logout</button>
+	</section>
+	<script src="./main.js"></script>
+</body>
+
+</html>

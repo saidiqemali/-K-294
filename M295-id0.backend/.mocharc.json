@@ -1,0 +1,15 @@
+{
+  "color": true,
+  "delay": false,
+  "diff": true,
+  "exit": true,
+  "extension": ["js", ".cjs"],
+  "jobs": 1,
+  "package": "./package.json",
+  "parallel": false,
+  "recursive": false,
+  "reporter": ["progress", "spec"],
+  "watch": false,
+  "watch-files": [". /**/*.js"],
+  "watch-ignore": ["node_modules"]
+}

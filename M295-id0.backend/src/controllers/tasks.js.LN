@@ -1,0 +1,81 @@
+const { verifyToken } = require('../middleware/auth-handler');
+// const { APIResponse } = require('../utils/response');
+// const db = require('../utils/db');
+const { GeneralError } = require('../utils/errors');
+
+function fetchTasks(req, res) {
+  verifyToken(req, res, () => {
+    if (req.token && req.email && req.uid) {
+      // Your code to return the array of tasks
+      //
+      let err = new GeneralError('Unexcepted');
+      return res.status(err.getCode()).json({
+        code: err.getCode(),
+        message: err.getUserFriendlyMessage(),
+      });
+    }
+  });
+}
+
+function addTask(req, res) {
+  verifyToken(req, res, () => {
+    if (req.token && req.email && req.uid) {
+      // Your code to add a new task
+      // Take a look into the unit test or the register controller
+      let err = new GeneralError('Unexcepted');
+      return res.status(err.getCode()).json({
+        code: err.getCode(),
+        message: err.getUserFriendlyMessage(),
+      });
+    }
+  });
+}
+
+function getTask(req, res) {
+  verifyToken(req, res, () => {
+    if (req.token && req.email && req.uid) {
+      // Your code to get the task with req.params.id
+      // Take a look into the uuid controller
+      let err = new GeneralError('Unexcepted');
+      return res.status(err.getCode()).json({
+        code: err.getCode(),
+        message: err.getUserFriendlyMessage(),
+      });
+    }
+  });
+}
+
+function updateTask(req, res) {
+  verifyToken(req, res, () => {
+    if (req.token && req.email && req.uid) {
+      // Your code to update the task with req.params.id
+
+      let err = new GeneralError('Unexcepted');
+      return res.status(err.getCode()).json({
+        code: err.getCode(),
+        message: err.getUserFriendlyMessage(),
+      });
+    }
+  });
+}
+
+function deleteTask(req, res) {
+  verifyToken(req, res, () => {
+    if (req.token && req.email && req.uid) {
+      // Your code to delete the task with req.params.uuid
+      let err = new GeneralError('Unexcepted');
+      return res.status(err.getCode()).json({
+        code: err.getCode(),
+        message: err.getUserFriendlyMessage(),
+      });
+    }
+  });
+}
+
+module.exports = {
+  fetchTasks,
+  addTask,
+  getTask,
+  updateTask,
+  deleteTask,
+};

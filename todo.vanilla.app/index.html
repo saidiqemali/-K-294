@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Vanilla Todo App</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
+  <style>
+    .is-authenticated .authenticated-only {
+      display: block;
+    }
+
+    .is-authenticated .unauthenticated-only {
+      display: none;
+    }
+
+    .authenticated-only {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="block">
+
+      <h1 class="title">Vanilla Todo App</h1>
+      <section id="loginSection" class="unauthenticated-only">
+        <h1>Login</h1>
+        <form>
+          <label for="input-email">Email</label>
+          <input type="email" name="email" id="input-email" value="hugo@nowhere.com">
+          <br>
+          <label for="input-password">Password</label>
+          <input type="password" name="password" id="input-password" value="Zli123">
+          <button type="button" onclick="register()">Register</button>
+          <button type="button" onclick="login()">Login</button>
+          <!-- <button type="button" onclick="loadTasks()">Load</button> -->
+        </form>
+      </section>
+      <section class="authenticated-only">
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <p id="welcome"></p>
+        <button type="button" onclick="loadTasks()">Load</button>
+        <button type="button" onclick="logout()">Logout</button>
+        <form class="is-full" id="create">
+          <input class="is-full" type="text" name="new_task" id="new_task" placeholder="Create New Task" value="" />
+          <button id="new_task_input_btn" type="submit">Add</button>
+          <div class="cards authenticated-only" id="tasks">
+
+            <!-- placeholder -->
+          </div>
+        </form>
+      </section>
+
+      <script src="./api.js"></script>
+
+
+    </div>
+  </main>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script>
+    index().then(data => {
+      // console.log(data);
+      data.forEach(function (item) {
+        addTask(item);
+      });
+    });
+  </script>
+</body>
+
+</html>

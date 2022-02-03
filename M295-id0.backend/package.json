@@ -1,0 +1,56 @@
+{
+  "name": "id0.backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API Backend Skeleton",
+  "keywords": [
+    "API",
+    "Backend",
+    "JSON",
+    "OpenAPI",
+    "JWT",
+    "Express",
+    "Mocha",
+    "Supertest",
+    "Morgan",
+    "Winston",
+    "PostgreSQL"
+  ],
+  "scripts": {
+    "dev": "nodemon ./src/api.js",
+    "serve": "node ./src/api.js",
+    "test": "mocha ./src/test/**/*.js",
+    "coverage": "nyc npm test",
+    "lint": "eslint --fix ./**/*.js",
+    "format": "prettier --write ./**/*.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-openapi": "^9.3.0",
+    "express-openapi-validator": "^4.13.1",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg-promise": "^10.11.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^9.1.3",
+    "mock-req-res": "^1.2.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.4.1",
+    "request": "^2.88.2",
+    "sinon": "^12.0.1",
+    "sinon-chai": "^3.7.0",
+    "supertest": "^6.1.6"
+  },
+  "author": "Fabian Dennler",
+  "license": "MIT"
+}

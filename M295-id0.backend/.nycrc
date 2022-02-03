@@ -1,0 +1,5 @@
+{
+  "skip-full": true,
+  "exclude": ["**/*.spec.js", "**/node_modules/**"],
+  "reporter": ["html", "text", "text-summary"]
+}

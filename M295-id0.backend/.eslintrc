@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "prettier", "plugin:mocha/recommended"],
+  "parserOptions": {
+      "ecmaVersion": "latest"
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "plugins": ["prettier", "mocha"]
+}

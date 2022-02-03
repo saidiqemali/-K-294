@@ -1,0 +1,26 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "owner": 1
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "owner": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "hugo@nowhere.com",
+      "password": "$2a$10$9F3CIaFEvHMOU13vm4m5g.1kczgtbmJHGtsED8FarqEYU5u5PqiQ2",
+      "id": 1
+    },
+    {
+      "email": "marta@nowhere.com",
+      "password": "$2a$10$UjSoiv/yTt.DDYaEYoKTeebVM/BkctLD68GziAAQJWehEeeSazTTq",
+      "id": 2
+    }
+  ]
+}
