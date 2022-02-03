@@ -2,30 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo List</title>
     <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
 </head>
 <body>
-    <div class="app-container">
-    <h1 class="app-header">ToDo List</h1>
-
-    <div class="add-task">
-        <input type="text" placeholder="Add New Task" class="task-input">
-        <input type="submit" value="" class="submit-task" title="Add Task">
+    <h1>To Do List</h1>
+    <div class="container">
+        <input id="inputField" type="text"><button  @click.prevent="addNewTodo" id="btn" >Neue ToDO</button>
+        <div class="to-dos" id="toDoContainer">
+        </div>
     </div>
-
-    <ul class="task-list">
-    <li class="task-list-item">
-        <label class="task-list-item-label">
-            <input type="checkbox">
-                <span>Task</span>
-        </label>
-        <span class="delete-btn" title="Delete Task"></span>
-    </li>
-    </ul>
-    </div>
-
+    <script src="main.js"></script>
 </body>
 </html>
