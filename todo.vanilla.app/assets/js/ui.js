@@ -1,5 +1,5 @@
-var tasksList = document.getElementById('tasks');
-var taskform = document.getElementById('create');
+var tasksList = document.getElementById('tasksList');
+var taskform = document.getElementById('taskform');
 // Do this when we submit the form
 taskform.addEventListener('submit', function (e) {
   e.preventDefault();

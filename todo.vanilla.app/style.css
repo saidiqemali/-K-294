@@ -47,7 +47,7 @@ head {
     font-size: 20px;
     line-height: 32px;
     margin: 0 0 12px 0;
-    color: #302d5e;
+    color: #291be6;
 }
 
 
@@ -65,7 +65,7 @@ head {
     padding: 0 5px;
     outline: none;
     border: none;
-    border-bottom: 1px solid #272727;
+    border-bottom: 1px solid #db2020;
     background-color: transparent;
     margin-right: 15px;
     color: #272727;
@@ -74,6 +74,6 @@ head {
 }
 
 #inputField::placeholder{
-    color: #272727;
+    color: #8f0b0b;
 }
 

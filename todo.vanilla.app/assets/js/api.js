@@ -53,13 +53,14 @@ async function create(data) {
 async function remove(id) {
   const formData = new FormData();
   formData.append("id", 1);
+  alert("Deleted")
   const response = await fetch(base_url + "/todos", {
     method: "DELETE",
     body: formData,
   })
+  alert = ("Task Gelöscht");
   return response.json();
 }
-
 
 // eslint-disable-next-line no-unused-vars
 async function login() {
@@ -91,7 +92,7 @@ async function register() {
         if (response.ok) {
             console.log(await response.json())
         } else {
-            throw new Error(await response.json())
+            alert("Bereits Registriert");
         }
     } catch (error) {
         console.error(error)
@@ -100,7 +101,9 @@ async function register() {
 
 // eslint-disable-next-line no-unused-vars
 function logout() {
-    setUser(null)
+    setUser({user:"", accessToken:""})
+    window.location.reload();
+
 }
 
 // eslint-disable-next-line no-unused-vars
@@ -129,6 +132,6 @@ function setUser(auth) {
     } else {
         document.body.classList.remove('is-authenticated')
         document.body.classList.add('is-unauthenticated')
-        welcomeElement.innerText = ""
+        welcomeElement.innerText = " ";
     }
 }
