@@ -38,3 +38,14 @@
   text-align: center;
 }
 
+.is-authenticated .authenticated-only {
+  display: block;
+}
+
+.is-authenticated .unauthenticated-only {
+  display: none;
+}
+
+.authenticated-only {
+  display: none;
+}

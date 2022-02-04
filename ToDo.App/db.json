@@ -1,0 +1,82 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "owner": 1
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "owner": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    }
+  ],
+  "users": [
+    {
+      "email": "hugo@nowhere.com",
+      "password": "$2a$10$9F3CIaFEvHMOU13vm4m5g.1kczgtbmJHGtsED8FarqEYU5u5PqiQ2",
+      "id": 1
+    },
+    {
+      "email": "marta@nowhere.com",
+      "password": "$2a$10$UjSoiv/yTt.DDYaEYoKTeebVM/BkctLD68GziAAQJWehEeeSazTTq",
+      "id": 2
+    },
+    {
+      "email": "camy@gmail.com",
+      "password": "$2a$10$s.pImYa2mm2iL4QxEmr7K.a7TP20cnnX4IrG1useCXpWYMH5NLTBC",
+      "id": 3
+    },
+    {
+      "email": "saidi.qemali@lernende.bbw.ch",
+      "password": "$2a$10$Bd9LMhC353o38a3kJQustOag2S4ioYgZgB2Oi/4pYBMWUGSIYsfvK",
+      "id": 4
+    },
+    {
+      "email": "sajdiqemali@gmail.com",
+      "password": "$2a$10$KQ5Yr6vTBdO6ZxZPq.QrIuiVOTtpLFKV//hOcaFlHezzaiDsnhwx6",
+      "id": 5
+    },
+    {
+      "email": "nbokbo@com",
+      "password": "$2a$10$TGWkoR4PC3m8ZNAfv.e6Cub9SCSOeGuFIbg8t0SybFr.Nm2F3FqdK",
+      "id": 6
+    }
+  ]
+}

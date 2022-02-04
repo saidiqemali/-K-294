@@ -8,22 +8,9 @@
 
   <title>Vanilla Todo App</title>
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
-  <style>
-    .is-authenticated .authenticated-only {
-      display: block;
-    }
 
-    .is-authenticated .unauthenticated-only {
-      display: none;
-    }
-
-    .authenticated-only {
-      display: none;
-    }
-  </style>
 </head>
 
 <body>
@@ -31,9 +18,6 @@
     <div class="block">
 
       <h1 class="title">Vanilla Todo App</h1>
-
-
-      <p id="welcome"></p>
 
       <section id="loginSection" class="unauthenticated-only">
         <h1>Login</h1>
@@ -48,33 +32,35 @@
           <!-- <button type="button" onclick="loadTasks()">Load</button> -->
         </form>
       </section>
+
+
       <section class="authenticated-only">
-        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-        <link rel="stylesheet" href="assets/css/main.css" />
         <button type="button" onclick="logout()">Ausloggen</button>
 
 
 
-    <h1>To Do List</h1>
-    <form class="container" id="taskform">
-        <input id="inputNewToDO" name="inputNewToDO" type="text"><button  @click.prevent="addNewTodo" id="btn" >Neue ToDO</button>
-        <div class="to-dos" id="tasksList">
-        </div>
-      </form>
-    <script src="main.js"></script>
+        <p id="welcome"></p>
 
 
+        <h1>To Do List</h1>
+        <form class="container" id="taskform">
+          <input id="inputNewToDO" name="inputNewToDO" type="text">
+          <!-- <button @click.prevent="addNewTodo" id="btn">NeueToDO</button> -->
+          <button type="button" id="addToDoButton">Hinzufügen</button>
 
-</html>
+          
+          <div class="to-dos" id="tasksList">
             <!-- placeholder -->
           </div>
         </form>
+
       </section>
 
 
     </div>
   </main>
 
+  <script src="assets/js/main.js"></script>
   <script src="assets/js/api.js"></script>
   <script src="assets/js/ui.js"></script>
   <script>
