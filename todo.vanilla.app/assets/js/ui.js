@@ -1,14 +1,20 @@
 var tasksList = document.getElementById('tasksList');
 var taskform = document.getElementById('taskform');
+
+
 // Do this when we submit the form
 taskform.addEventListener('submit', function (e) {
   e.preventDefault();
-  var title = taskform.elements.new_task.value;
+
+console.log(inputNewToDO);
+  var title = inputNewToDO.value;
+console.log(title);
   create(title).then(data => {
-    addTask({
-      id: data.id,
-      title: title
-    });
+    console.log(data);
+    // addTask({
+    //   id: data.id,
+    //   title: title
+    // });
     // document.getElementById("card-" + data.id).focus();
   });
 });

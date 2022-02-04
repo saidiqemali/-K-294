@@ -1,14 +1,16 @@
 let addToDoButton = document.getElementById('btn');
 let toDoContainer = document.getElementById('toDoContainer');
-let inputField = document.getElementById('inputField');
+let inputNewToDO = document.getElementById('inputNewToDO');
 
 addToDoButton.addEventListener('click', function () {
     alert("Added Task");
     var paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
-    paragraph.innerText = inputField.value;
-    toDoContainer.appendChild(paragraph);
-    inputField.value = "";
+    paragraph.innerText = inputNewToDO.value;
+    tasksList.appendChild(paragraph);
+    inputNewToDO.value = "";
+
+
     paragraph.addEventListener('click', function () {
         paragraph.style.textDecoration = "line-through";
         alert("Completed Task");

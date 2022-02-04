@@ -9,6 +9,7 @@
   <title>Vanilla Todo App</title>
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="style.css" />
   <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
   <style>
     .is-authenticated .authenticated-only {
@@ -50,20 +51,16 @@
       <section class="authenticated-only">
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
         <link rel="stylesheet" href="assets/css/main.css" />
-        <button type="button" onclick="loadTasks()">Laden</button>
         <button type="button" onclick="logout()">Ausloggen</button>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>To Do List</title>
+
 
     <h1>To Do List</h1>
-    <div class="container">
-        <input id="inputField" type="text"><button  @click.prevent="addNewTodo" id="btn" >Neue ToDO</button>
-        <div class="to-dos" id="toDoContainer">
+    <form class="container" id="taskform">
+        <input id="inputNewToDO" name="inputNewToDO" type="text"><button  @click.prevent="addNewTodo" id="btn" >Neue ToDO</button>
+        <div class="to-dos" id="tasksList">
         </div>
-    </div>
+      </form>
     <script src="main.js"></script>
 
 
