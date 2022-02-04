@@ -51,14 +51,19 @@ async function create(data) {
 }
 
 async function remove(id) {
+
+  function showAlert() {
+    var myText = "Task Deleted";
+    console.log(myText);
+  }
+
   const formData = new FormData();
   formData.append("id", 1);
-  alert("Deleted")
+  console.log("Deleted");
   const response = await fetch(base_url + "/todos", {
     method: "DELETE",
     body: formData,
   })
-  alert = ("Task Gelöscht");
   return response.json();
 }
 
